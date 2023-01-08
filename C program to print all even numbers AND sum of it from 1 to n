@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+int main()
+ { 
+int n, i, sum = 0;
+printf("Enter a number: ");
+scanf("%d", &n);
+printf("All even numbers from 1 to %d: ", n);
+for (i = 2; i <= n; i += 2)
+{
+    printf("%d ", i);
+    sum += i;
+}
+printf("\n");
+
+printf("Sum of all even numbers from 1 to %d: %d\n", n, sum);
+return 0;
+}
