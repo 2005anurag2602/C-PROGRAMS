@@ -1,0 +1,68 @@
+#include <stdio.h>
+int main()
+ { 
+int choice; double num1, num2, result;
+printf("Enter 1 for simple calculator, 2 for days of week: ");
+scanf("%d", &choice);
+switch (choice)
+{
+    case 1:
+        printf("Enter two numbers and operator (+, -, *, /): ");
+        scanf("%lf%lf %c", &num1, &num2, &operator);
+        switch (operator)
+        {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '/':
+                result = num1 / num2;
+                break;
+            default:
+                printf("Invalid operator\n");
+                return 0;
+        }
+        printf("Result: %.2lf\n", result);
+        break;
+    case 2:
+        printf("Enter a number (1-7): ");
+        scanf("%d", &day);
+        switch (day)
+        {
+            case 1:
+                printf("Monday\n");
+                break;
+            case 2:
+                printf("Tuesday\n");
+                break;
+            case 3:
+                printf("Wednesday\n");
+                break;
+            case 4:
+                printf("Thursday\n");
+                break;
+            case 5:
+                printf("Friday\n");
+                break;
+            case 6:
+                printf("Saturday\n");
+                break;
+            case 7:
+                printf("Sunday\n");
+                break;
+            default:
+                printf("Invalid day\n");
+                break;
+        }
+        break;
+    default:
+        printf("Invalid choice\n");
+        break;
+}
+return 0;
+}
