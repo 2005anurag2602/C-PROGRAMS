@@ -1,0 +1,25 @@
+#include <stdio.h> 
+int main()
+ { 
+double sub1, sub2, sub3, sub4, sub5; double total, average, percentage; 
+char grade;
+printf("Enter marks of five subjects: ");
+scanf("%lf%lf%lf%lf%lf", &sub1, &sub2, &sub3, &sub4, &sub5);
+total = sub1 + sub2 + sub3 + sub4 + sub5;
+average = total / 5;
+percentage = (total / 500) * 100;
+if (percentage >= 90)
+    grade = 'A';
+else if (percentage >= 80 && percentage < 90)
+    grade = 'B';
+else if (percentage >= 70 && percentage < 80)
+    grade = 'C';
+else if (percentage >= 60 && percentage < 70)
+    grade = 'D';
+else
+    grade = 'F';
+printf("Total marks: %lf\n", total);
+printf("Average marks: %lf\n", average);
+printf("Percentage: %lf%%\n", percentage);
+printf("Grade: %c\n", grade);
+return 0;
