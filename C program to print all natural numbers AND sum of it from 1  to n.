@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+int main() 
+{ 
+int n, i, sum = 0;
+printf("Enter a number: ");
+scanf("%d", &n);
+printf("All natural numbers from 1 to %d: ", n);
+for (i = 1; i <= n; i++)
+{
+    printf("%d ", i);
+    sum += i;
+}
+printf("\n");
+printf("Sum of all natural numbers from 1 to %d: %d\n", n, sum);
+return 0;
+}
