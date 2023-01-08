@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+int units;
+double bill;
+printf("Enter number of units consumed: ");
+scanf("%d", &units);
+if (units <= 100)
+    bill = units * 0.50;
+else if (units <= 200)
+    bill = 50 + (units - 100) * 0.75;
+else if (units <= 300)
+    bill = 125 + (units - 200) * 1.20;
+else
+    bill = 325 + (units - 300) * 1.50;
+printf("Total electricity bill: %.2lf\n", bill);
+return 0;
+}
