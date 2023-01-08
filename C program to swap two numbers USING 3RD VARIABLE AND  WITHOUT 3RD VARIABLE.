@@ -1,0 +1,17 @@
+
+#include<stdio.h>
+int main ()
+{
+ Int num1,num2,temp;
+printf("Enter two numbers: ");
+scanf("%d%d", &num1, &num2);
+temp = num1;
+num1 = num2;
+num2 = temp;
+printf("Swapped numbers using 3rd variable: %d %d\n", num1, num2);
+num1 = num1 + num2;
+num2 = num1 - num2;
+num1 = num1 - num2;
+printf("Swapped numbers without 3rd variable: %d %d\n", num1, num2);
+return 0;
+}
